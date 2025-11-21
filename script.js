@@ -2,6 +2,13 @@ let cardContainer = document.querySelector(".card-container");
 let searchInput = document.querySelector(".search-container input");
 let dados = [];
 
+// Adiciona um evento que "escuta" o pressionar de uma tecla no campo de busca
+searchInput.addEventListener("keydown", function(event) {
+    // Se a tecla pressionada for "Enter", executa a função de busca
+    if (event.key === "Enter") {
+        iniciarBusca();
+    }
+});
 
 async function iniciarBusca() {
     // Se os dados ainda não foram carregados, busca do JSON.
