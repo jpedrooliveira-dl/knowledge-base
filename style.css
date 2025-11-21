@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #9f7bf5; /* Azul Claro */
+    --secondary-color: #d7f9ff; /* Cinza Claro */
+    --tertiary-color: #9aa0a6; /* Cinza Médio */
+    --accent-color: #fbbc04; /* Amarelo/Dourado */
+    --bg-color: #010F14; /* Cinza Escuro Principal */
+    --card-bg-color: #18191b; /* Fundo do Cartão (mais escuro) */
+    --border-color: #3c4043; /* Cor da Borda/Divisor */
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: "Quicksand", sans-serif;
+    /* --- CORREÇÃO DO BUG DE LAYOUT --- */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+header {
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    z-index: 10;
+    border-bottom: 1px solid var(--border-color);
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.logo {
+    width: 150px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-container input {
+    padding: 0.65rem 1.2rem;
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid var(--tertiary-color);
+    background: var(--bg-color);
+    font-family: inherit;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    width: 25rem;
+    color: var(--secondary-color);
+}
+
+.search-container input::placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--tertiary-color);
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.card-container h3 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+#botao-busca {
+    padding: 0.65rem 1.5rem;
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+#botao-busca:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+#botao-busca:active {
+    transform: scale(0.98);
+}
+
+main {
+    /* --- CORREÇÃO DO BUG DE LAYOUT --- */
+    flex-grow: 1; /* Permite que o main ocupe todo o espaço disponível */
+    overflow-y: auto; /* Garante que apenas o conteúdo principal role */
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1rem; /* Espaçamento ajustado */
+}
+
+/* Estilização da barra de rolagem (WebKit) - Mantida para visual escuro */
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 20px;
+    border: 2px solid var(--bg-color);
+}
+
+/* Estilos de Artigo para Resultados */
+article {
+    background: var(--card-bg-color); /* Fundo sutil para o cartão */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 300px; */
+}
+
+article:hover {
+    transform: scale(1.005);
+    cursor: default; /* Não é clicável, então cursor padrão */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+article h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+article p, article div {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    white-space: pre-wrap; /* Mantém quebras de linha do Gemini */
+}
+
+.sources-box {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.sources-box p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--tertiary-color);
+    margin-bottom: 0.5rem;
+}
+
+.sources-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sources-box li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.sources-box li a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.imgLogo {
+    width: 100px; 
+    /* Garante que o contêiner ocupa a largura total disponível do seu pai para que o 'auto' funcione. */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* As propriedades Flexbox abaixo já estão corretas para centralizar o CONTEÚDO (a imagem) */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se houver altura suficiente) */
+
+    /* A `flex-direction: column` não é necessária se for apenas uma imagem, mas não atrapalha. */
+    flex-direction: column; 
+}
+
+/* Opcional: Centralizar a DIV .imgLogo na página (se o pai for 100% da largura) */
+/* Se a imagem ainda não estiver centralizada, a DIV .imgLogo precisa ser centralizada primeiro. */
+.imgLogo {
+    /* ... (código acima) ... */
+    margin: 0 auto; /* Centraliza o contêiner .imgLogo na horizontal */
+}
+
+/* FOOTER */
+footer.footer {
+    /* --- CORREÇÃO DO BUG DE LAYOUT --- */
+    position: static; /* Remove position: absolute */
+    margin-top: auto; /* Garante que ele fique no final do flex container */
+
+    width: 100%;
+    color: var(--tertiary-color);
+    background-color: var(--bg-color);
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+ul.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    #botao-busca {
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    article {
+        width: 300px;
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+}
+

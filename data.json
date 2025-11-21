@@ -1,0 +1,662 @@
+[
+  {
+    "nome": "Kotlin",
+    "descricao": "Linguagem de programação moderna, estaticamente tipada, que roda na JVM e é a linguagem oficial para desenvolvimento Android.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+    "data_criacao": "2011",
+    "link": "https://kotlinlang.org/",
+    "tags": [
+      "linguagem de programação",
+      "jvm",
+      "android",
+      "backend",
+      "multiplataforma"
+    ]
+  },
+  {
+    "nome": "Rust",
+    "descricao": "Linguagem de programação de sistemas focada em segurança, velocidade e concorrência, garantindo segurança de memória sem garbage collector.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+    "data_criacao": "2010",
+    "link": "https://rust-lang.org/pt-BR/",
+    "tags": [
+      "linguagem de programação",
+      "sistemas",
+      "performance",
+      "segurança",
+      "baixo nível"
+    ]
+  },
+  {
+    "nome": "Scala",
+    "descricao": "Linguagem que combina recursos de programação orientada a objetos e programação funcional, executada na Java Virtual Machine (JVM).",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/330px-Scala-full-color.svg.png",
+    "data_criacao": "2004",
+    "link": "https://www.scala-lang.org/",
+    "tags": [
+      "linguagem de programação",
+      "jvm",
+      "funcional",
+      "big data"
+    ]
+  },
+  {
+    "nome": "C++",
+    "descricao": "Extensão da linguagem C, amplamente utilizada para desenvolvimento de sistemas operacionais, jogos de alto desempenho e software embarcado.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+    "data_criacao": "1985",
+    "link": "https://isocpp.org/",
+    "tags": [
+      "linguagem de programação",
+      "sistemas",
+      "jogos",
+      "performance",
+      "baixo nível"
+    ]
+  },
+  {
+    "nome": "Dart",
+    "descricao": "Linguagem otimizada para cliente, desenvolvida pelo Google, e é a base para o framework Flutter, focado em desenvolvimento multi-plataforma.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png",
+    "data_criacao": "2011",
+    "link": "https://dart.dev/",
+    "tags": [
+      "linguagem de programação",
+      "mobile",
+      "frontend",
+      "flutter",
+      "multiplataforma"
+    ]
+  },
+  {
+    "nome": "Elixir",
+    "descricao": "Linguagem funcional e concorrente construída sobre a Erlang Virtual Machine (BEAM), conhecida por construir sistemas escaláveis e tolerantes a falhas.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Elixir_logo.svg",
+    "data_criacao": "2012",
+    "link": "https://elixir-lang.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "backend",
+      "concorrência",
+      "web"
+    ]
+  },
+  {
+    "nome": "Haskell",
+    "descricao": "Linguagem de programação puramente funcional, de propósito geral, com tipagem estática forte e avaliação preguiçosa (lazy evaluation).",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
+    "data_criacao": "1990",
+    "link": "https://www.haskell.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "acadêmica",
+      "pesquisa"
+    ]
+  },
+  {
+    "nome": "R",
+    "descricao": "Linguagem e ambiente de software livre para computação estatística e gráficos, amplamente usada em ciência de dados e análise estatística.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
+    "data_criacao": "1993",
+    "link": "https://www.r-project.org/",
+    "tags": [
+      "linguagem de programação",
+      "ciência de dados",
+      "estatística",
+      "análise"
+    ]
+  },
+  {
+    "nome": "SQL",
+    "descricao": "Linguagem de consulta padrão utilizada para gerenciar e manipular dados em sistemas de gerenciamento de banco de dados relacionais (RDBMS).",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+    "data_criacao": "1974",
+    "link": "https://www.iso.org/standard/63555.html",
+    "tags": [
+      "linguagem de consulta",
+      "banco de dados",
+      "relacional",
+      "dados"
+    ]
+  },
+  {
+    "nome": "Lua",
+    "descricao": "Linguagem de script leve, Brasileira, poderosa e incorporável, frequentemente usada para scripting em jogos (como Roblox) e sistemas embarcados.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg",
+    "data_criacao": "1993",
+    "link": "https://www.lua.org/",
+    "tags": [
+      "linguagem de programação",
+      "scripting",
+      "jogos",
+      "embutido",
+      "performance"
+    ]
+  },
+  {
+    "nome": "Julia",
+    "descricao": "Linguagem de programação dinâmica de alto nível, projetada especificamente para computação científica, machine learning e análise de dados.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg",
+    "data_criacao": "2012",
+    "link": "https://julialang.org/",
+    "tags": [
+      "linguagem de programação",
+      "computação científica",
+      "machine learning",
+      "performance"
+    ]
+  },
+  {
+    "nome": "C",
+    "descricao": "Linguagem imperativa, procedural e estruturada, fundamental para o desenvolvimento de sistemas operacionais e software de baixo nível.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+    "data_criacao": "1972",
+    "link": "https://en.wikipedia.org/wiki/C_(programming_language)",
+    "tags": [
+      "linguagem de programação",
+      "sistemas",
+      "baixo nível",
+      "kernel"
+    ]
+  },
+  {
+    "nome": "HTML5",
+    "descricao": "A quinta revisão da linguagem de marcação mais utilizada para estruturar e apresentar conteúdo na World Wide Web.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    "data_criacao": "2008",
+    "link": "https://html.spec.whatwg.org/multipage/",
+    "tags": [
+      "linguagem de marcação",
+      "frontend",
+      "web",
+      "estrutura"
+    ]
+  },
+  {
+    "nome": "CSS3",
+    "descricao": "A linguagem de folha de estilo usada para descrever a apresentação (aparência e formatação) de um documento escrito em HTML.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    "data_criacao": "1999",
+    "link": "https://www.w3.org/Style/CSS/",
+    "tags": [
+      "linguagem de estilo",
+      "frontend",
+      "design",
+      "web"
+    ]
+  },
+  {
+    "nome": "React",
+    "descricao": "Biblioteca JavaScript declarativa e eficiente para construir interfaces de usuário baseadas em componentes.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "data_criacao": "2013",
+    "link": "https://reactjs.org/",
+    "tags": [
+      "biblioteca",
+      "frontend",
+      "web",
+      "ui"
+    ]
+  },
+  {
+    "nome": "Vue.js",
+    "descricao": "Framework progressivo para a construção de interfaces de usuário. É projetado para ser adaptável e fácil de integrar.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+    "data_criacao": "2014",
+    "link": "https://vuejs.org/",
+    "tags": [
+      "framework",
+      "frontend",
+      "web",
+      "reatividade"
+    ]
+  },
+  {
+    "nome": "Angular",
+    "descricao": "Framework completo e robusto, mantido pelo Google, para construir Single Page Applications (SPAs) de grande escala.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    "data_criacao": "2016",
+    "link": "https://angular.io/",
+    "tags": [
+      "framework",
+      "frontend",
+      "typescript",
+      "spa"
+    ]
+  },
+  {
+    "nome": "Svelte",
+    "descricao": "Framework de frontend que compila o código em JavaScript Vanilla em tempo de build, resultando em pacotes menores e mais rápidos.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
+    "data_criacao": "2016",
+    "link": "https://svelte.dev/",
+    "tags": [
+      "framework",
+      "frontend",
+      "compilador",
+      "web"
+    ]
+  },
+  {
+    "nome": "PostgreSQL",
+    "descricao": "Sistema de gerenciamento de banco de dados objeto-relacional robusto, de código aberto, conhecido por sua confiabilidade e conformidade com SQL.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+    "data_criacao": "1996",
+    "link": "https://www.postgresql.org/",
+    "tags": [
+      "banco de dados",
+      "relacional",
+      "opensource",
+      "robustez"
+    ]
+  },
+  {
+    "nome": "MongoDB",
+    "descricao": "Banco de dados NoSQL orientado a documentos, que oferece alta disponibilidade, escalabilidade e flexibilidade de esquema.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+    "data_criacao": "2009",
+    "link": "https://www.mongodb.com/",
+    "tags": [
+      "banco de dados",
+      "nosql",
+      "documentos",
+      "escalabilidade"
+    ]
+  },
+  {
+    "nome": "Docker",
+    "descricao": "Plataforma de código aberto que permite empacotar uma aplicação e todas as suas dependências em um contêiner virtual isolado.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_logo.svg",
+    "data_criacao": "2013",
+    "link": "https://www.docker.com/",
+    "tags": [
+      "ferramenta",
+      "devops",
+      "containerização",
+      "infraestrutura",
+      "cloud"
+    ]
+  },
+  {
+    "nome": "Kubernetes",
+    "descricao": "Sistema de orquestração de contêineres de código aberto, originalmente projetado pelo Google, que automatiza a implantação, escala e gerenciamento de aplicações.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+    "data_criacao": "2014",
+    "link": "https://kubernetes.io/",
+    "tags": [
+      "ferramenta",
+      "devops",
+      "orquestração",
+      "cloud"
+    ]
+  },
+  {
+    "nome": "Terraform",
+    "descricao": "Ferramenta de infraestrutura como Código (IaC) da HashiCorp, que permite provisionar e gerenciar recursos de infraestrutura usando arquivos de configuração.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg",
+    "data_criacao": "2014",
+    "link": "https://www.terraform.io/",
+    "tags": [
+      "ferramenta",
+      "devops",
+      "iac",
+      "cloud",
+      "infraestrutura"
+    ]
+  },
+  {
+    "nome": "Apache Kafka",
+    "descricao": "Plataforma distribuída de streaming de eventos de código aberto, usada para construir pipelines de dados em tempo real e aplicativos de streaming.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Apache_kafka_wordtype.svg",
+    "data_criacao": "2011",
+    "link": "https://kafka.apache.org/",
+    "tags": [
+      "plataforma",
+      "big data",
+      "streaming",
+      "mensageria",
+      "dados"
+    ]
+  },
+  {
+    "nome": "Erlang",
+    "descricao": "Linguagem funcional projetada para sistemas massivamente concorrentes, distribuídos e tolerantes a falhas, com foco em telecomunicações.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/Erlang_logo.svg",
+    "data_criacao": "1986",
+    "link": "https://www.erlang.org/",
+    "tags": [
+      "linguagem de programação",
+      "concorrência",
+      "sistemas distribuidos",
+      "backend"
+    ]
+  },
+  {
+    "nome": "Next.js",
+    "descricao": "Framework React para produção que oferece renderização do lado do servidor (SSR), geração de site estático (SSG) e recursos completos de full-stack.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+    "data_criacao": "2016",
+    "link": "https://nextjs.org/",
+    "tags": [
+      "framework",
+      "frontend",
+      "fullstack",
+      "react",
+      "servidor"
+    ]
+  },
+  {
+    "nome": "Redis",
+    "descricao": "Estrutura de dados em memória, usada como cache, banco de dados e message broker, conhecida por sua alta performance.",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg",
+    "data_criacao": "2009",
+    "link": "https://redis.io/",
+    "tags": [
+      "banco de dados",
+      "cache",
+      "nosql",
+      "ferramenta"
+    ]
+  },
+  {
+    "nome": "Cassandra",
+    "descricao": "Banco de dados NoSQL distribuído e altamente escalável, projetado para lidar com grandes volumes de dados em servidores commodity.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg",
+    "data_criacao": "2008",
+    "link": "https://cassandra.apache.org/",
+    "tags": [
+      "banco de dados",
+      "nosql",
+      "distribuido",
+      "big data"
+    ]
+  },
+  {
+    "nome": "GitHub Actions",
+    "descricao": "Plataforma de CI/CD integrada ao GitHub, usada para automatizar fluxos de trabalho de desenvolvimento de software.",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg",
+    "data_criacao": "2018",
+    "link": "https://github.com/features/actions",
+    "tags": [
+      "ci/cd",
+      "automação",
+      "ferramenta",
+      "devops"
+    ]
+  },
+  {
+    "nome": "AWS Lambda",
+    "descricao": "Serviço de computação serverless que permite executar código em resposta a eventos sem provisionar ou gerenciar servidores.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ea/AWS_Lambda_logo.svg",
+    "data_criacao": "2014",
+    "link": "https://aws.amazon.com/lambda/",
+    "tags": [
+      "cloud computing",
+      "serverless",
+      "aws",
+      "computação"
+    ]
+  },
+  {
+    "nome": "Vite",
+    "descricao": "Ferramenta de construção frontend moderna que melhora significativamente a experiência de desenvolvimento usando módulos ES nativos.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
+    "data_criacao": "2020",
+    "link": "https://vitejs.dev/",
+    "tags": [
+      "ferramenta",
+      "build tool",
+      "frontend",
+      "módulos"
+    ]
+  },
+  {
+    "nome": "Express.js",
+    "descricao": "Framework de aplicação web minimalista e flexível para Node.js, amplamente utilizado para construir APIs RESTful e aplicações backend.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    "data_criacao": "2010",
+    "link": "https://expressjs.com/",
+    "tags": [
+      "framework",
+      "backend",
+      "nodejs",
+      "api"
+    ]
+  },
+  {
+    "nome": "Tailwind CSS",
+    "descricao": "Framework CSS utilitário que permite construir designs rapidamente, aplicando classes diretamente na marcação HTML.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    "data_criacao": "2017",
+    "link": "https://tailwindcss.com/",
+    "tags": [
+      "css",
+      "framework",
+      "frontend",
+      "design"
+    ]
+  },
+  {
+    "nome": "XML",
+    "descricao": "Linguagem de marcação usada para definir regras para codificar documentos em um formato que é legível por humanos e máquinas.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Xml-logo-notext.svg",
+    "data_criacao": "1998",
+    "link": "https://www.w3.org/XML/",
+    "tags": [
+      "linguagem de marcação",
+      "formato de dados",
+      "dados",
+      "web"
+    ]
+  },
+  {
+    "nome": "NestJS",
+    "descricao": "Framework Node.js progressivo para construir aplicações eficientes e escaláveis do lado do servidor, baseado em arquitetura modular.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg",
+    "data_criacao": "2017",
+    "link": "https://nestjs.com/",
+    "tags": [
+      "framework",
+      "backend",
+      "nodejs",
+      "typescript"
+    ]
+  },
+  {
+    "nome": "MariaDB",
+    "descricao": "Um fork do MySQL, este sistema de gerenciamento de banco de dados relacional é conhecido por ser de código aberto e orientado à comunidade.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/ca/MariaDB_colour_logo.svg",
+    "data_criacao": "2009",
+    "link": "https://mariadb.org/",
+    "tags": [
+      "banco de dados",
+      "relacional",
+      "rdbms",
+      "open source"
+    ]
+  },
+  {
+    "nome": "Shell Script",
+    "descricao": "Linguagem de script usada para automatizar tarefas operacionais, manipular arquivos e executar comandos em sistemas operacionais Unix/Linux.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg",
+    "data_criacao": "1970",
+    "link": "https://www.gnu.org/software/bash/",
+    "tags": [
+      "linguagem de script",
+      "automação",
+      "sistemas operacionais",
+      "devops"
+    ]
+  },
+  {
+    "nome": "Webpack",
+    "descricao": "Um empacotador de módulos primário para aplicações JavaScript, usado para compilar e otimizar ativos de frontend.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Webpack_logo.svg",
+    "data_criacao": "2012",
+    "link": "https://webpack.js.org/",
+    "tags": [
+      "ferramenta",
+      "build tool",
+      "frontend",
+      "módulos"
+    ]
+  },
+  {
+    "nome": "Azure Functions",
+    "descricao": "Solução serverless da Microsoft Azure que permite executar pequenos pedaços de código ('funções') em resposta a eventos.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Azure_Functions_logo.svg",
+    "data_criacao": "2016",
+    "link": "https://azure.microsoft.com/en-us/products/functions",
+    "tags": [
+      "cloud computing",
+      "serverless",
+      "microsoft azure",
+      "computação"
+    ]
+  },
+  {
+    "nome": "Neo4j",
+    "descricao": "Sistema de gerenciamento de banco de dados de grafo nativo, ideal para modelar e consultar dados altamente conectados.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Neo4j_logo.svg",
+    "data_criacao": "2007",
+    "link": "https://neo4j.com/",
+    "tags": [
+      "banco de dados",
+      "nosql",
+      "grafo",
+      "big data"
+    ]
+  },
+  {
+    "nome": "Helm",
+    "descricao": "Gerenciador de pacotes para Kubernetes que ajuda a definir, instalar e fazer upgrade de aplicações complexas usando 'Charts'.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/35/Helm_logo.svg",
+    "data_criacao": "2016",
+    "link": "https://helm.sh/",
+    "tags": [
+      "kubernetes",
+      "devops",
+      "ferramenta",
+      "orquestração"
+    ]
+  },
+  {
+    "nome": "gRPC",
+    "descricao": "Framework de chamada de procedimento remoto (RPC) de código aberto e alto desempenho, usado para comunicação entre microsserviços.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Grpc-logo.svg",
+    "data_criacao": "2015",
+    "link": "https://grpc.io/",
+    "tags": [
+      "protocolo",
+      "microsserviços",
+      "comunicação",
+      "ferramenta"
+    ]
+  },
+  {
+    "nome": "Jest",
+    "descricao": "Framework de teste em JavaScript focado em simplicidade, usado principalmente para testar componentes frontend e código Node.js.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jest_logo.svg",
+    "data_criacao": "2014",
+    "link": "https://jestjs.io/",
+    "tags": [
+      "framework",
+      "testes",
+      "javascript",
+      "ferramenta"
+    ]
+  },
+  {
+    "nome": "npm",
+    "descricao": "Gerenciador de pacotes padrão para o ecossistema Node.js, usado para instalar bibliotecas e gerenciar dependências de projetos.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
+    "data_criacao": "2010",
+    "link": "https://www.npmjs.com/",
+    "tags": [
+      "ferramenta",
+      "gerenciador de pacotes",
+      "nodejs",
+      "javascript"
+    ]
+  },
+  {
+    "nome": "SQLite",
+    "descricao": "Sistema de banco de dados relacional que implementa um mecanismo de banco de dados SQL serverless, leve e de arquivo único.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg",
+    "data_criacao": "2000",
+    "link": "https://www.sqlite.org/index.html",
+    "tags": [
+      "banco de dados",
+      "relacional",
+      "embedded",
+      "serveless"
+    ]
+  },
+  {
+    "nome": "PowerShell",
+    "descricao": "Linguagem de script e shell de linha de comando desenvolvida pela Microsoft, usada para automação de tarefas em ambientes Windows e cross-platform.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/PowerShell_Core_6.0_icon.svg",
+    "data_criacao": "2006",
+    "link": "https://learn.microsoft.com/en-us/powershell/",
+    "tags": [
+      "linguagem de script",
+      "automação",
+      "sistemas operacionais",
+      "microsoft"
+    ]
+  },
+  {
+    "nome": "GitLab CI",
+    "descricao": "Ferramenta de Integração e Entrega Contínua (CI/CD) embutida no GitLab, que automatiza a construção, teste e implantação de software.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/GitLab_CI_CD_logo.svg",
+    "data_criacao": "2014",
+    "link": "https://docs.gitlab.com/ee/ci/",
+    "tags": [
+      "ci/cd",
+      "automação",
+      "ferramenta",
+      "devops"
+    ]
+  },
+  {
+    "nome": "Remix",
+    "descricao": "Framework web full-stack focado em performance e na Web Standards, construído em torno de React Router.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Remix_logo.svg",
+    "data_criacao": "2020",
+    "link": "https://remix.run/",
+    "tags": [
+      "framework",
+      "fullstack",
+      "frontend",
+      "react"
+    ]
+  },
+  {
+    "nome": "Astro",
+    "descricao": "Construtor de sites focado em desempenho, que entrega zero JavaScript por padrão, ideal para blogs e sites estáticos de conteúdo.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Astro_logo.svg",
+    "data_criacao": "2021",
+    "link": "https://astro.build/",
+    "tags": [
+      "build tool",
+      "frontend",
+      "static sites",
+      "web performance"
+    ]
+  },
+  {
+    "nome": "JSON",
+    "descricao": "Formato de arquivo aberto e padrão de dados que usa texto legível por humanos para transmitir objetos de dados compostos por pares de atributo-valor e arrays.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg",
+    "data_criacao": "2001",
+    "link": "https://www.json.org/json-en.html",
+    "tags": [
+      "formato de dados",
+      "api",
+      "interoperabilidade",
+      "web"
+    ]
+  }
+]
