@@ -730,5 +730,20 @@
       "interoperabilidade",
       "web"
     ]
+  },
+  {
+    "nome": "React Native",
+    "descricao": "Framework baseado em React para desenvolvimento de aplicativos móveis nativos para Android e IOS usando JavaScript.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "data_criacao": "2015",
+    "link": "https://reactnative.dev/",
+    "tags": [
+      "framework",
+      "mobile",
+      "javascript",
+      "ios",
+      "android",
+      "multiplataforma"
+    ]
   }
 ]
