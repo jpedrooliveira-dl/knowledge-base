@@ -1,5 +1,6 @@
 let cardContainer = document.querySelector(".card-container");
 let searchInput = document.querySelector(".search-container input");
+let botaoBusca = document.querySelector("#botao-busca");
 let dados = [];
 
 // Adiciona um evento que "escuta" o pressionar de uma tecla no campo de busca
@@ -10,11 +11,18 @@ searchInput.addEventListener("keydown", function(event) {
     }
 });
 
+botaoBusca.addEventListener("click", iniciarBusca);
+
 async function iniciarBusca() {
     // Se os dados ainda não foram carregados, busca do JSON.
     if (dados.length === 0) {
         try {
-            let resposta = await fetch("http://localhost:3000/tecnologia");
+
+            // Data.json no front end
+            let resposta = await fetch("data.json")
+
+            // No server
+            // let resposta = await fetch("http://localhost:3000/tecnologia");
             dados = await resposta.json();
         } catch (error) {
             console.error("Falha ao carregar os dados:", error);

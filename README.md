@@ -7,24 +7,25 @@ Este é um projeto web simples que funciona como uma base de conhecimento, exibi
 - **Visualização em Cards:** Cada tecnologia é apresentada em um card de fácil leitura.
 - **Busca Dinâmica:** Filtre os cards em tempo real digitando no campo de busca.
 - **Carregamento de Dados Externo:** As informações são carregadas de um arquivo `data.json`, tornando fácil a adição de novas tecnologias.
-- **Links Externos:** Cada card possui um link "Saiba mais" que direciona para a documentação oficial ou página de referência da tecnologia.
+- **API Node.js (Opcional):** O projeto inclui um servidor Express simples para simular o consumo de uma API real.
 
 ## 📸 Screenshot
 
 
-*(Dica: Tire um print da sua aplicação, envie para um site como o Imgur e cole o link aqui)*
+![Texto Alternativo](https://imgur.com/1om7wU3.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5:** Para a estrutura da página.
 - **CSS3:** Para a estilização dos componentes (não fornecido, mas implícito).
 - **JavaScript (Vanilla):** Para a lógica de busca, manipulação do DOM e carregamento dos dados.
-- **JSON:** Como formato para armazenar os dados das tecnologias.
+- **Node.js & Express:** Para o servidor backend (opcional).
 
 ## 🚀 Como Executar o Projeto
 
-Para executar este projeto localmente, siga os passos abaixo:
+Este projeto pode ser executado de duas maneiras: **Modo Estático** (padrão) ou **Modo Fullstack** (com API).
 
+### Opção 1: Modo Estático (Padrão / GitHub Pages)
 1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
@@ -38,6 +39,32 @@ Para executar este projeto localmente, siga os passos abaixo:
 3.  **Abra o arquivo `index.html` no seu navegador.**
 
     Como o projeto usa a `Fetch API` para carregar o `data.json`, pode ser necessário executá-lo a partir de um servidor local para evitar problemas de CORS (Cross-Origin Resource Sharing). Uma maneira fácil de fazer isso é usando a extensão **Live Server** no Visual Studio Code.
+
+> **Nota:** O arquivo `data.json` está presente na raiz do front-end especificamente para permitir que o projeto seja hospedado gratuitamente no **GitHub Pages**, que serve apenas conteúdo estático.
+
+### Opção 2: Modo Fullstack (Com API Node.js)
+
+Se você quiser testar a aplicação consumindo dados de um servidor real:
+
+1.  **Inicie o Servidor:**
+    Abra um terminal, navegue até a pasta `api` e instale as dependências:
+    ```bash
+    cd api
+    npm install
+    node server.js
+    ```
+    O servidor rodará em `http://localhost:3000`.
+
+2.  **Configure o Front-end:**
+    Abra o arquivo `script.js` e altere a fonte dos dados na função `iniciarBusca()`:
+
+    ```javascript
+    // Comente a linha do modo estático:
+    // let resposta = await fetch("data.json");
+
+    // Descomente a linha do servidor:
+    let resposta = await fetch("http://localhost:3000/tecnologia");
+    ```
 
 ## 📂 Estrutura de Arquivos
 
