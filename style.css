@@ -278,7 +278,11 @@ ul.footer-links {
 
     header h1 {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo {
+        width: 100px;
     }
 
     .search-container {
@@ -292,8 +296,8 @@ ul.footer-links {
     }
     
     #botao-busca {
-        width: 100%;
-        margin-top: 0.5rem;
+        width: 50%;
+        margin-top: 0.1rem;
         padding: 0.75rem 1.5rem;
     }
 
@@ -310,3 +314,14 @@ ul.footer-links {
     }
 }
 
+.dev {
+    padding-top: 0.5rem;
+}
+
+.dev a {
+    color: var(--primary-color);
+}
+
+.dev a:hover {
+    color: var(--accent-color);
+}

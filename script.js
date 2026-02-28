@@ -27,7 +27,8 @@ async function iniciarBusca() {
 
     const resultados = dados.filter(item => 
         item.nome.toLowerCase().includes(termoBusca) ||
-        item.descricao.toLowerCase().includes(termoBusca)
+        item.descricao.toLowerCase().includes(termoBusca) ||
+        item.data_criacao.toLowerCase().includes(termoBusca)
     );
 
     renderizarCards(resultados);

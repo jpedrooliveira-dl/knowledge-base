@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #9f7bf5; /* Azul Claro */
+    --secondary-color: #d7f9ff; /* Cinza Claro */
+    --tertiary-color: #9aa0a6; /* Cinza Médio */
+    --accent-color: #fbbc04; /* Amarelo/Dourado */
+    --bg-color: #010F14; /* Cinza Escuro Principal */
+    --card-bg-color: #18191b; /* Fundo do Cartão */
+    --border-color: #3c4043; /* Cor da Borda */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+main img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(159, 123, 245, 0.1);
+}
+
+.sobre {
+    background-color: rgba(24, 25, 27, 0.5);
+    color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+main > a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    color: var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+main > a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(159, 123, 245, 0.4);
+    transform: translateY(-2px);
+}
+
+footer.footer-sobre {
+    width: 100%;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    .sobre {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
