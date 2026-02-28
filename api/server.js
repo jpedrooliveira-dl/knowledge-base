@@ -1,4 +1,13 @@
-[
+const express = require('express')
+const cors = require('cors')
+
+const app = express()
+const PORT = 3000
+
+// app.arguments(cors())
+app.use(cors())
+
+const dadosTecnologia = [
   {
     "nome": "JavaScript",
     "descricao": "JavaScript é uma linguagem de programação muito usada em desenvolvimento web.",
@@ -746,4 +755,13 @@
       "multiplataforma"
     ]
   }
+
 ]
+
+app.get('/tecnologia', (req, res) => {
+    res.json(dadosTecnologia)
+})
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em http://localhost:${PORT}`)
+})
