@@ -6,8 +6,8 @@ Este é um projeto web simples que funciona como uma base de conhecimento, exibi
 
 - **Visualização em Cards:** Cada tecnologia é apresentada em um card de fácil leitura.
 - **Busca Dinâmica:** Filtre os cards em tempo real digitando no campo de busca.
-- **Carregamento de Dados Externo:** As informações são carregadas de um arquivo `data.json`, tornando fácil a adição de novas tecnologias.
-- **API Node.js (Opcional):** O projeto inclui um servidor Express simples para simular o consumo de uma API real.
+- **Integração com Banco de Dados:** As informações agora são carregadas de um banco de dados MySQL através de uma API Node.js.
+- **API Backend:** O projeto conta com um servidor Express que fornece os dados via endpoints REST.
 
 ## 📸 Screenshot
 
@@ -19,52 +19,37 @@ Este é um projeto web simples que funciona como uma base de conhecimento, exibi
 - **HTML5:** Para a estrutura da página.
 - **CSS3:** Para a estilização dos componentes (não fornecido, mas implícito).
 - **JavaScript (Vanilla):** Para a lógica de busca, manipulação do DOM e carregamento dos dados.
-- **Node.js & Express:** Para o servidor backend (opcional).
+- **Node.js & Express:** Para o servidor backend.
+- **MySQL:** Banco de dados relacional para armazenar as informações das tecnologias.
 
 ## 🚀 Como Executar o Projeto
 
-Este projeto pode ser executado de duas maneiras: **Modo Estático** (padrão) ou **Modo Fullstack** (com API).
-
-### Opção 1: Modo Estático (Padrão / GitHub Pages)
 1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
     ```
 
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd seu-repositorio
-    ```
+2.  **Configure o Banco de Dados MySQL:**
+    Crie um banco de dados chamado `knowledge_base` e uma tabela `tecnologia` contendo as colunas compatíveis com seu código (ex: `nome`, `descricao`, `data_criacao`, `logo` e `link`). Insira alguns dados de teste na tabela.
 
-3.  **Abra o arquivo `index.html` no seu navegador.**
-
-    Como o projeto usa a `Fetch API` para carregar o `data.json`, pode ser necessário executá-lo a partir de um servidor local para evitar problemas de CORS (Cross-Origin Resource Sharing). Uma maneira fácil de fazer isso é usando a extensão **Live Server** no Visual Studio Code.
-
-> **Nota:** O arquivo `data.json` está presente na raiz do front-end especificamente para permitir que o projeto seja hospedado gratuitamente no **GitHub Pages**, que serve apenas conteúdo estático.
-
-### Opção 2: Modo Fullstack (Com API Node.js)
-
-Se você quiser testar a aplicação consumindo dados de um servidor real:
-
-1.  **Inicie o Servidor:**
+3.  **Inicie o Servidor (API):**
     Abra um terminal, navegue até a pasta `api` e instale as dependências:
     ```bash
     cd api
     npm install
+    ```
+    Crie um arquivo `.env` na pasta `api` e configure a senha do seu banco de dados:
+    ```env
+    PASSWORD_DB=sua_senha_do_banco
+    ```
+    Em seguida, rode o servidor:
+    ```bash
     node server.js
     ```
     O servidor rodará em `http://localhost:3000`.
 
-2.  **Configure o Front-end:**
-    Abra o arquivo `script.js` e altere a fonte dos dados na função `iniciarBusca()`:
-
-    ```javascript
-    // Comente a linha do modo estático:
-    // let resposta = await fetch("data.json");
-
-    // Descomente a linha do servidor:
-    let resposta = await fetch("http://localhost:3000/tecnologia");
-    ```
+4.  **Execute o Front-end:**
+    Abra o arquivo `index.html` na raiz do projeto em seu navegador. Recomenda-se o uso da extensão **Live Server** do Visual Studio Code. O Front-end buscará automaticamente os dados do backend.
 
 ## 📂 Estrutura de Arquivos
 
@@ -72,6 +57,8 @@ Se você quiser testar a aplicação consumindo dados de um servidor real:
 ├── index.html       # Arquivo principal da página
 ├── style.css        # Folha de estilos (crie este arquivo se precisar)
 ├── script.js        # Lógica de busca e renderização
-├── data.json        # Banco de dados com as tecnologias
+├── api/             # Pasta contendo o servidor backend
+│   ├── server.js    # Servidor Express e conexão com o MySQL
+│   └── .env         # Variáveis de ambiente (senhas e configs)
 └── README.md        # Este arquivo
 ```
