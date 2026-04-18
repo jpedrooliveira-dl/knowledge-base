@@ -18,11 +18,7 @@ async function iniciarBusca() {
     if (dados.length === 0) {
         try {
 
-            // Data.json no front end
-            let resposta = await fetch("data.json")
-
-            // No server
-            // let resposta = await fetch("http://localhost:3000/tecnologia");
+            let resposta = await fetch("http://localhost:3000/tecnologia");
             dados = await resposta.json();
         } catch (error) {
             console.error("Falha ao carregar os dados:", error);
@@ -48,7 +44,7 @@ function renderizarCards(dados) {
     for (let dado of dados) {
         let article = document.createElement("article");
         article.innerHTML = `
-        <img class="imgLogo"  src=${dado.logo} alt="logo">
+        <img class="imgLogo" src="${dado.logo}" alt="logo">
         <h2>${dado.nome}</h2>
         <p>${dado.data_criacao}</p>
         <p>${dado.descricao}</p>
