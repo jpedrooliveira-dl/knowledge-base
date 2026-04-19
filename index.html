@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,39 @@
     <link rel="icon" href="./public/assets/img/LOGO.png" type="image/png">
     <link rel="stylesheet" href="./public/assets/css/style.css">
 </head>
+
 <body>
     <header>
-        <a href="./index.html"><img class="logo" src="./public/assets/img/LOGO.png" alt="logo"></a>
-        <h1>Knowledge Base</h1>
-        <div class="search-container">
-            <input type="text" placeholder="🔍Digite uma linguagem de programação">
-            <button id="botao-busca" onclick="iniciarBusca()">Pesquisar</button>
-        </div>
+        <a href="./index.html" class="logo-link">
+            <img class="logo" src="./public/assets/img/LOGO.png" alt="logo">
+            <span class="logo-text">Knowledge Base</span>
+        </a>
+        <nav class="header-nav">
+            <a href="./public/pages/sobre.html">Sobre</a>
+            <a href="https://github.com/jpedrooliveira-dl" target="_blank">GitHub</a>
+        </nav>
     </header>
 
     <main>
-        <section class="card-container">
-            <h3>Pesquise sobre sua linguagem de programação favorita ou tecnologias 👩🏻‍💻🔍</h3>
-            
+        <section class="hero">
+            <h1>O que você quer aprender hoje?</h1>
+            <p>Pesquise sobre sua linguagem de programação favorita ou tecnologias 👩🏻‍💻🔍</p>
+            <div class="search-container">
+                <input type="text" placeholder="Ex: JavaScript, Python, React...">
+                <button id="botao-busca" onclick="iniciarBusca()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    Pesquisar
+                </button>
+            </div>
+        </section>
+
+        <section class="card-container initial-state">
+        
+               
         </section>
     </main>
 
@@ -30,19 +50,21 @@
                 <a href="./public/pages/sobre.html">Sobre</a>
             </li>
             <li>
-                <a href="https://github.com/jpedrooliveira-dl" target="_blank" >GitHub</a>
+                <a href="https://github.com/jpedrooliveira-dl" target="_blank">GitHub</a>
             </li>
             <li>
-                <a href="https://www.instagram.com/joaopedroodl/" target="_blank" >Instagram</a>
+                <a href="https://www.instagram.com/joaopedroodl/" target="_blank">Instagram</a>
             </li>
             <li>
                 <a href="https://joaopedrooliveira.vercel.app/" target="_blank">Site</a>
             </li>
         </ul>
         <div class="dev">
-        Desenvolvido por <a href="https://joaopedrooliveira.vercel.app/">João Pedro</a> | joaopedroo.dev@protonmail.com
+            Desenvolvido por <a href="https://joaopedrooliveira.vercel.app/">João Pedro</a> |
+            joaopedroo.dev@protonmail.com
         </div>
     </footer>
-<script src="./public/assets/js/script.js"></script>
+    <script src="./public/assets/js/script.js"></script>
 </body>
+
 </html>

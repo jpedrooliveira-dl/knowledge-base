@@ -31,48 +31,83 @@ a {
 }
 
 header {
-    padding: 1.5rem 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
-    background: var(--bg-color);
+    background: rgba(1, 15, 20, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 10;
-    border-bottom: 1px solid var(--border-color);
-    gap: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(60, 64, 67, 0.4);
 }
 
-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 500;
-    white-space: nowrap;
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    letter-spacing: 0.5px;
 }
 
 .logo {
-    width: 150px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-nav a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: var(--primary-color);
 }
 
 .search-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1.5rem;
+    background: var(--card-bg-color);
+    padding: 0.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 650px;
+}
+
+.search-container:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 32px rgba(159, 123, 245, 0.15);
+    transform: translateY(-2px);
 }
 
 .search-container input {
-    padding: 0.65rem 1.2rem;
-    border-radius: 9999px; /* rounded-full */
-    border: 1px solid var(--tertiary-color);
-    background: var(--bg-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
     font-family: inherit;
     font-size: 1.1rem;
-    transition: all 0.2s ease;
-    width: 25rem;
+    width: 100%;
     color: var(--secondary-color);
+    outline: none;
 }
 
 .search-container input::placeholder {
@@ -82,35 +117,71 @@ header h1 {
 }
 
 .search-container input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 1px var(--primary-color);
+    box-shadow: none;
 }
 
-.card-container h3 {
+/* Hero Section */
+.hero {
     text-align: center;
-    color: var(--secondary-color);
-    margin-bottom: 2rem;
+    padding: 4rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(159, 123, 245, 0.1) 0%, rgba(1, 15, 20, 0) 60%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    -webkit-background-clip: text; /* Mantém para Safari/Chrome antigos */
+    background-clip: text;         /* Adiciona a propriedade padrão aqui */
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    max-width: 600px;
+    margin: 0;
 }
 
 #botao-busca {
-    padding: 0.65rem 1.5rem;
-    border-radius: 9999px; /* rounded-full */
-    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    border: none;
     cursor: pointer;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.05rem;
     white-space: nowrap;
-    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-    background-color: var(--bg-color);
-    color: var(--primary-color);
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 #botao-busca:hover {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    box-shadow: 0 0 0 1px var(--primary-color);
+    background-color: var(--accent-color);
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(251, 188, 4, 0.25);
 }
 
 #botao-busca:active {
@@ -124,6 +195,20 @@ main {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem 1rem; /* Espaçamento ajustado */
+}
+
+.card-container {
+    display: grid;
+    /* Cria colunas responsivas: elas terão no mínimo 300px e se ajustarão para preencher o espaço */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.initial-state .article-placeholder {
+    border-style: dashed;
+    border-color: var(--border-color);
+    background: transparent;
+    min-height: 450px;
 }
 
 /* Estilização da barra de rolagem (WebKit) - Mantida para visual escuro */
@@ -146,8 +231,7 @@ article {
     background: var(--card-bg-color); /* Fundo sutil para o cartão */
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -157,9 +241,9 @@ article {
 }
 
 article:hover {
-    transform: scale(1.005);
+    transform: translateY(-5px);
     cursor: default; /* Não é clicável, então cursor padrão */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(159, 123, 245, 0.1);
 }
 
 article h2 {
@@ -272,41 +356,47 @@ ul.footer-links {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         padding: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    header h1 {
-        text-align: center;
-        margin-bottom: 0.5rem;
+    .logo-text {
+        display: none;
     }
 
     .logo {
-        width: 100px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .search-container {
         flex-direction: column;
+        border-radius: 16px;
         width: 100%;
     }
 
     .search-container input {
         width: 100%;
-        font-size: 1rem;
+        text-align: center;
     }
     
     #botao-busca {
-        width: 50%;
-        margin-top: 0.1rem;
-        padding: 0.75rem 1.5rem;
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
     }
 
     main {
         padding: 1rem;
-    }
-
-    article {
-        width: 300px;
     }
 
     article h2 {

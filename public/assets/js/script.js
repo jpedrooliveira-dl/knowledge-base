@@ -22,7 +22,7 @@ async function iniciarBusca() {
             dados = await resposta.json();
         } catch (error) {
             console.error("Falha ao carregar os dados:", error);
-            cardContainer.innerHTML = `<p>Erro ao carregar as informações. Tente novamente mais tarde.</p>`;
+            cardContainer.innerHTML = `<p style="color: red;">Erro ao carregar as informações. Tente novamente mais tarde.</p>`;
             return;
         }
     }
@@ -44,12 +44,13 @@ function renderizarCards(dados) {
     for (let dado of dados) {
         let article = document.createElement("article");
         article.innerHTML = `
+        <article  class="article-placeholder">
         <img class="imgLogo" src="${dado.logo}" alt="logo">
         <h2>${dado.nome}</h2>
         <p>${dado.data_criacao}</p>
         <p>${dado.descricao}</p>
         <a href="${dado.link}" target="_blank">Saiba mais</a>
-        
+        </article>
         `
 
         cardContainer.appendChild(article)
